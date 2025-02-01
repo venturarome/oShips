@@ -1,0 +1,45 @@
+{
+  "name": "oships",
+  "version": "1.0.0",
+  "description": "GraphQL API with oGame ships data",
+  "main": "build/server.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "start": "node build/server.js",
+    "build": "tsc -p . && ncp src/schema build/schema",
+    "start:dev": "npm run build:dev",
+    "build:dev": "npx nodemon 'src/server.ts' --exec 'ts-node' src/server.ts -e ts,json,graphql",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ogame",
+    "ships",
+    "battle",
+    "simulator"
+  ],
+  "author": "Ventura Mendo <ventura.romendo@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@graphql-tools/utils": "^10.6.2",
+    "graphql-http": "^1.22.3",
+    "graphql-import-node": "^0.0.5",
+    "graphql-playground-middleware-express": "^1.7.23",
+    "graphql-yoga": "^5.10.4",
+    "http": "^0.0.1-security",
+    "lodash": "^4.17.21",
+    "ncp": "^2.0.0",
+    "typescript": "^5.7.2"
+  },
+  "devDependencies": {
+    "@types/compression": "^1.7.5",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5.0.0",
+    "@types/express-graphql": "^0.8.2",
+    "@types/graphql": "^14.2.3",
+    "@types/lodash": "^4.17.13",
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2"
+  }
+}
