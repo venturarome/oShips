@@ -6,6 +6,9 @@ type Query {
     ships: [Ship]!
     "Info of the ship with the given id"
     ship(id: ID!): Ship
+
+    "List all different resources"
+    resources: [Resource!]!
 }
 
 "Information about the ship"
@@ -35,8 +38,15 @@ type Cost {
     amount: Int!
 }
 
+"Value object, containing information about a resource"
+type Resource {
+    name: String!
+    type: ResourceType!
+    description: String!
+}
+
 "Available resource types"
-enum Resource {
+enum ResourceType {
     METAL
     CRYSTAL
     DEUTERIUM

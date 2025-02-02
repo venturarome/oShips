@@ -14,6 +14,15 @@ const type: IResolvers = {
         probability: parent => {
             return 100 - 100/parent.shots;
         }
+    },
+
+    Cost: {
+        resource: parent => {
+            return _.find(
+                database.resources,
+                function(resource) { return resource.type == parent.resource; }
+            );
+        }
     }
 }
 

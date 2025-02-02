@@ -25,7 +25,11 @@ const query: IResolvers = {
                 name: `No ship found with id ${id}`,
                 description: `No ship found with id ${id}`,
             }
-        }
+        },
+
+        resources(): any {
+            return database.resources;
+        },
     }
 }
 

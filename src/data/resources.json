@@ -1,0 +1,17 @@
+[
+    {
+        "type": "METAL",
+        "name": "Metal",
+        "description": "The most easily acquirable resource of the game. Bigger planets produce more metal."
+    },
+    {
+        "type": "CRYSTAL",
+        "name": "Crystal",
+        "description": "One of the three resources of the game. Planets closer to the sun produce more crystal."
+    },
+    {
+        "type": "DEUTERIUM",
+        "name": "Deuterium",
+        "description": "The most scarce resource of the game. Planets further to the sun produce more deuterium."
+    }
+]
