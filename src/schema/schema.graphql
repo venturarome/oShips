@@ -1,0 +1,55 @@
+type Query {
+    hello: String!
+    helloName(name: String!): String!
+
+    "List of all the available ships in the game"
+    ships: [Ship]!
+    "Info of the ship with the given id"
+    ship(id: ID!): Ship
+}
+
+"Information about the ship"
+type Ship {
+    "Ship identifier"
+    id: ID!
+    "Ship name"
+    name: String!
+    description: String            # TODO add to the data
+    "Cost to build one unit of the ship, detailed by resource type"
+    cost: [Cost!]
+    image: String                  # TODO add to the data
+    type: ShipType!
+    structural_integrity: Int
+    shield_power: Int
+    weapon_power: Int
+    base_speed: Int
+    cargo_capacity: Int
+    fuel_consumption: Int
+    rapid_fire_against: [RapidFire]
+    rapid_fire_from: [RapidFire]
+}
+
+"Value object, containing and amount and a resource"
+type Cost {
+    resource: Resource!
+    amount: Int!
+}
+
+"Available resource types"
+enum Resource {
+    METAL
+    CRYSTAL
+    DEUTERIUM
+}
+
+"Whether the ship is a battleship or civil"
+enum ShipType {
+    BATTLESHIP
+    CIVIL
+}
+
+type RapidFire {
+    ship: Ship!
+    shots: Int!
+    probability: Float!
+}
