@@ -2,11 +2,16 @@
     {
         "id": 1,
         "name": "Small Cargo",
-        "cost": {
-            "metal": 2000,
-            "crystal": 2000,
-            "deuterium": 0
-        },
+        "cost": [
+            {
+                "resource": "METAL",
+                "amount": 2000
+            },
+            {
+                "resource": "CRYSTAL",
+                "amount": 2000
+            }
+        ],
         "structural_integrity": 4000,
         "shield_power": 10,
         "weapon_power": 5,
@@ -37,11 +42,16 @@
     {
         "id": 2,
         "name": "Large Cargo",
-        "cost": {
-            "metal": 6000,
-            "crystal": 6000,
-            "deuterium": 0
-        },
+        "cost": [
+            {
+                "resource": "METAL",
+                "amount": 6000
+            },
+            {
+                "resource": "CRYSTAL",
+                "amount": 6000
+            }
+        ],
         "structural_integrity": 12000,
         "shield_power": 25,
         "weapon_power": 5,
@@ -72,11 +82,16 @@
     {
         "id": 3,
         "name": "Light Fighter",
-        "cost": {
-            "metal": 3000,
-            "crystal": 1000,
-            "deuterium": 0
-        },
+        "cost": [
+            {
+                "resource": "METAL",
+                "amount": 3000
+            },
+            {
+                "resource": "CRYSTAL",
+                "amount": 1000
+            }
+        ],
         "structural_integrity": 4000,
         "shield_power": 10,
         "weapon_power": 50,
@@ -111,11 +126,16 @@
     {
         "id": 4,
         "name": "Heavy Fighter",
-        "cost": {
-            "metal": 6000,
-            "crystal": 4000,
-            "deuterium": 0
-        },
+        "cost": [
+            {
+                "resource": "METAL",
+                "amount": 6000
+            },
+            {
+                "resource": "CRYSTAL",
+                "amount": 4000
+            }
+        ],
         "structural_integrity": 10000,
         "shield_power": 25,
         "weapon_power": 150,
@@ -146,11 +166,20 @@
     {
         "id": 5,
         "name": "Cruiser",
-        "cost": {
-            "metal": 20000,
-            "crystal": 7000,
-            "deuterium": 2000
-        },
+        "cost": [
+            {
+                "resource": "METAL",
+                "amount": 20000
+            },
+            {
+                "resource": "CRYSTAL",
+                "amount": 7000
+            },
+            {
+                "resource": "DEUTERIUM",
+                "amount": 2000
+            }
+        ],
         "structural_integrity": 27000,
         "shield_power": 50,
         "weapon_power": 400,
@@ -185,11 +214,16 @@
     {
         "id": 6,
         "name": "Battleship",
-        "cost": {
-            "metal": 45000,
-            "crystal": 15000,
-            "deuterium": 0
-        },
+        "cost": [
+            {
+                "resource": "METAL",
+                "amount": 45000
+            },
+            {
+                "resource": "CRYSTAL",
+                "amount": 15000
+            }
+        ],
         "structural_integrity": 60000,
         "shield_power": 200,
         "weapon_power": 1000,
@@ -207,11 +241,20 @@
     {
         "id": 7,
         "name": "Colony Ship",
-        "cost": {
-            "metal": 10000,
-            "crystal": 20000,
-            "deuterium": 10000
-        },
+        "cost": [
+            {
+                "resource": "METAL",
+                "amount": 10000
+            },
+            {
+                "resource": "CRYSTAL",
+                "amount": 20000
+            },
+            {
+                "resource": "DEUTERIUM",
+                "amount": 10000
+            }
+        ],
         "structural_integrity": 30000,
         "shield_power": 100,
         "weapon_power": 50,
@@ -233,11 +276,20 @@
     {
         "id": 8,
         "name": "Recycler",
-        "cost": {
-            "metal": 10000,
-            "crystal": 6000,
-            "deuterium": 2000
-        },
+        "cost": [
+            {
+                "resource": "METAL",
+                "amount": 10000
+            },
+            {
+                "resource": "CRYSTAL",
+                "amount": 6000
+            },
+            {
+                "resource": "DEUTERIUM",
+                "amount": 2000
+            }
+        ],
         "structural_integrity": 16000,
         "shield_power": 10,
         "weapon_power": 1,
@@ -259,11 +311,12 @@
     {
         "id": 9,
         "name": "Espionage Probe",
-        "cost": {
-            "metal": 0,
-            "crystal": 1000,
-            "deuterium": 0
-        },
+        "cost": [
+            {
+                "resource": "CRYSTAL",
+                "amount": 1000
+            }
+        ],
         "structural_integrity": 100,
         "shield_power": 0,
         "weapon_power": 0,
@@ -276,11 +329,20 @@
     {
         "id": 10,
         "name": "Bomber",
-        "cost": {
-            "metal": 50000,
-            "crystal": 25000,
-            "deuterium": 15000
-        },
+        "cost": [
+            {
+                "resource": "METAL",
+                "amount": 50000
+            },
+            {
+                "resource": "CRYSTAL",
+                "amount": 25000
+            },
+            {
+                "resource": "DEUTERIUM",
+                "amount": 15000
+            }
+        ],
         "structural_integrity": 75000,
         "shield_power": 500,
         "weapon_power": 1000,
@@ -311,11 +373,16 @@
     {
         "id": 11,
         "name": "Solar Satellite",
-        "cost": {
-            "metal": 0,
-            "crystal": 2000,
-            "deuterium": 500
-        },
+        "cost": [
+            {
+                "resource": "CRYSTAL",
+                "amount": 2000
+            },
+            {
+                "resource": "DEUTERIUM",
+                "amount": 500
+            }
+        ],
         "structural_integrity": 2000,
         "shield_power": 1,
         "weapon_power": 1,
@@ -328,11 +395,20 @@
     {
         "id": 12,
         "name": "Destroyer",
-        "cost": {
-            "metal": 60000,
-            "crystal": 50000,
-            "deuterium": 15000
-        },
+        "cost": [
+            {
+                "resource": "METAL",
+                "amount": 60000
+            },
+            {
+                "resource": "CRYSTAL",
+                "amount": 50000
+            },
+            {
+                "resource": "DEUTERIUM",
+                "amount": 15000
+            }
+        ],
         "structural_integrity": 110000,
         "shield_power": 500,
         "weapon_power": 2000,
@@ -371,11 +447,20 @@
     {
         "id": 13,
         "name": "Deathstar",
-        "cost": {
-            "metal": 5000000,
-            "crystal": 4000000,
-            "deuterium": 1000000
-        },
+        "cost": [
+            {
+                "resource": "METAL",
+                "amount": 5000000
+            },
+            {
+                "resource": "CRYSTAL",
+                "amount": 4000000
+            },
+            {
+                "resource": "DEUTERIUM",
+                "amount": 1000000
+            }
+        ],
         "structural_integrity": 9000000,
         "shield_power": 50000,
         "weapon_power": 200000,
@@ -432,11 +517,20 @@
     {
         "id": 14,
         "name": "Reaper",
-        "cost": {
-            "metal": 85000,
-            "crystal": 55000,
-            "deuterium": 20000
-        },
+        "cost": [
+            {
+                "resource": "METAL",
+                "amount": 85000
+            },
+            {
+                "resource": "CRYSTAL",
+                "amount": 55000
+            },
+            {
+                "resource": "DEUTERIUM",
+                "amount": 20000
+            }
+        ],
         "structural_integrity": 140000,
         "shield_power": 700,
         "weapon_power": 2800,
@@ -462,11 +556,20 @@
     {
         "id": 15,
         "name": "Pathfinder",
-        "cost": {
-            "metal": 8000,
-            "crystal": 15000,
-            "deuterium": 8000
-        },
+        "cost": [
+            {
+                "resource": "METAL",
+                "amount": 8000
+            },
+            {
+                "resource": "CRYSTAL",
+                "amount": 15000
+            },
+            {
+                "resource": "DEUTERIUM",
+                "amount": 8000
+            }
+        ],
         "structural_integrity": 24000,
         "shield_power": 100,
         "weapon_power": 200,
@@ -488,11 +591,16 @@
     {
         "id": 16,
         "name": "Crawler",
-        "cost": {
-            "metal": 2000,
-            "crystal": 2000,
-            "deuterium": 0
-        },
+        "cost": [
+            {
+                "resource": "METAL",
+                "amount": 2000
+            },
+            {
+                "resource": "CRYSTAL",
+                "amount": 2000
+            }
+        ],
         "structural_integrity": 4000,
         "shield_power": 10,
         "weapon_power": 1,
