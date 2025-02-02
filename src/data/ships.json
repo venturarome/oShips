@@ -2,6 +2,7 @@
     {
         "id": 1,
         "name": "Small Cargo",
+        "description": "This spacecraft is the basic unit for resource transport",
         "cost": [
             {
                 "resource": "METAL",
@@ -12,6 +13,7 @@
                 "amount": 2000
             }
         ],
+        "type": "CIVIL",
         "structural_integrity": 4000,
         "shield_power": 10,
         "weapon_power": 5,
@@ -52,6 +54,7 @@
                 "amount": 6000
             }
         ],
+        "type": "CIVIL",
         "structural_integrity": 12000,
         "shield_power": 25,
         "weapon_power": 5,
@@ -92,6 +95,7 @@
                 "amount": 1000
             }
         ],
+        "type": "BATTLESHIP",
         "structural_integrity": 4000,
         "shield_power": 10,
         "weapon_power": 50,
@@ -136,6 +140,7 @@
                 "amount": 4000
             }
         ],
+        "type": "BATTLESHIP",
         "structural_integrity": 10000,
         "shield_power": 25,
         "weapon_power": 150,
@@ -180,6 +185,7 @@
                 "amount": 2000
             }
         ],
+        "type": "BATTLESHIP",
         "structural_integrity": 27000,
         "shield_power": 50,
         "weapon_power": 400,
@@ -224,6 +230,7 @@
                 "amount": 15000
             }
         ],
+        "type": "BATTLESHIP",
         "structural_integrity": 60000,
         "shield_power": 200,
         "weapon_power": 1000,
@@ -255,6 +262,7 @@
                 "amount": 10000
             }
         ],
+        "type": "CIVIL",
         "structural_integrity": 30000,
         "shield_power": 100,
         "weapon_power": 50,
@@ -290,6 +298,7 @@
                 "amount": 2000
             }
         ],
+        "type": "CIVIL",
         "structural_integrity": 16000,
         "shield_power": 10,
         "weapon_power": 1,
@@ -317,6 +326,7 @@
                 "amount": 1000
             }
         ],
+        "type": "CIVIL",
         "structural_integrity": 100,
         "shield_power": 0,
         "weapon_power": 0,
@@ -343,6 +353,7 @@
                 "amount": 15000
             }
         ],
+        "type": "BATTLESHIP",
         "structural_integrity": 75000,
         "shield_power": 500,
         "weapon_power": 1000,
@@ -383,6 +394,7 @@
                 "amount": 500
             }
         ],
+        "type": "CIVIL",
         "structural_integrity": 2000,
         "shield_power": 1,
         "weapon_power": 1,
@@ -409,6 +421,7 @@
                 "amount": 15000
             }
         ],
+        "type": "BATTLESHIP",
         "structural_integrity": 110000,
         "shield_power": 500,
         "weapon_power": 2000,
@@ -461,6 +474,7 @@
                 "amount": 1000000
             }
         ],
+        "type": "BATTLESHIP",
         "structural_integrity": 9000000,
         "shield_power": 50000,
         "weapon_power": 200000,
@@ -531,6 +545,7 @@
                 "amount": 20000
             }
         ],
+        "type": "BATTLESHIP",
         "structural_integrity": 140000,
         "shield_power": 700,
         "weapon_power": 2800,
@@ -570,6 +585,7 @@
                 "amount": 8000
             }
         ],
+        "type": "BATTLESHIP",
         "structural_integrity": 24000,
         "shield_power": 100,
         "weapon_power": 200,
@@ -601,6 +617,7 @@
                 "amount": 2000
             }
         ],
+        "type": "CIVIL",
         "structural_integrity": 4000,
         "shield_power": 10,
         "weapon_power": 1,
