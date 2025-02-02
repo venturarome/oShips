@@ -18,7 +18,7 @@ type Ship {
     "Cost to build one unit of the ship, detailed by resource type"
     cost: [Cost!]
     image: String                  # TODO add to the data
-    type: ShipType!
+    type: ShipType
     structural_integrity: Int
     shield_power: Int
     weapon_power: Int
