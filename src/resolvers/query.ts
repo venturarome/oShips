@@ -11,7 +11,7 @@ const query: IResolvers = {
             return `Hello ${name}`;
         },
 
-        ships(): any {
+        ships(): Array<any> {
             return database.ships;
         },
         ship(parent: void, { id }): any {
@@ -27,7 +27,7 @@ const query: IResolvers = {
             }
         },
 
-        resources(): any {
+        resources(): Array<any> {
             return database.resources;
         },
     }
