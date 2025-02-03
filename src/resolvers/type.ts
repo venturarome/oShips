@@ -23,7 +23,41 @@ const type: IResolvers = {
                 function(resource) { return resource.type == parent.resource; }
             );
         }
-    }
+    },
+
+    ShipNumber: {
+        ship: parent => {
+            return _.find(
+                database.ships,
+                function(s) { return s.id == parent.ship; }
+            );
+        },
+        weapon_power: parent => {
+            const ship = _.find(
+                database.ships,
+                function(s) { return s.id == parent.ship; }
+            );
+            
+            if (ship == undefined) {
+                return -1;
+            }
+
+            return parent.number * ship.weapon_power;
+        },
+        cargo_capacity: parent => {
+            const ship = _.find(
+                database.ships,
+                function(s) { return s.id == parent.ship; }
+            );
+            
+            if (ship == undefined) {
+                return -1;
+            }
+
+            return parent.number * ship.cargo_capacity;
+        },
+        
+    },
 }
 
 export default type;

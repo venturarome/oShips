@@ -9,6 +9,28 @@ type Query {
 
     "List all different resources"
     resources: [Resource!]!
+
+    "List all registered fleets"
+    fleets: [Fleet]!
+}
+
+
+
+
+type Fleet {
+    id: ID!
+    name: String!
+    shipNumbers: [ShipNumber]!
+}
+
+type ShipNumber {
+    ship: Ship!
+    number: Int
+    # Calculated fields:
+    "The combined weapon_power of all the ships of that kind (number * ship.weapon_power)"
+    weapon_power: Int
+    "The sum of the cargo_capacity of all the ships of that kind (number * ship.cargo_capacity)"
+    cargo_capacity: Int
 }
 
 "Information about the ship"
@@ -20,7 +42,6 @@ type Ship {
     description: String            # TODO add to the data
     "Cost to build one unit of the ship, detailed by resource type"
     cost: [Cost!]
-    image: String                  # TODO add to the data
     type: ShipType
     structural_integrity: Int
     shield_power: Int

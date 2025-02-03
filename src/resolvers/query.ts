@@ -30,6 +30,10 @@ const query: IResolvers = {
         resources(): Array<any> {
             return database.resources;
         },
+
+        fleets(): Array<any> {
+            return database.fleets;
+        },
     }
 }
 
