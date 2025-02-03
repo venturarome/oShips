@@ -1,0 +1,40 @@
+[
+    {
+        "id": "1",
+        "name": "My Cargoes",
+        "shipNumbers": [
+            {
+                "ship": "1",
+                "number": 10
+            },
+            {
+                "ship": "2",
+                "number": 1
+            }
+        ]
+    },
+    {
+        "id": "2",
+        "name": "My LFs",
+        "shipNumbers": [
+            {
+                "ship": "3",
+                "number": 10
+            },
+            {
+                "ship": "4",
+                "number": 1
+            }
+        ]
+    },
+    {
+        "id": "3",
+        "name": "The almighty",
+        "shipNumbers": [
+            {
+                "ship": "13",
+                "number": 1
+            }
+        ]
+    }
+]
