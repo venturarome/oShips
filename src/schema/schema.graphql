@@ -19,7 +19,6 @@ type Mutation {
     addFleet(fleetInput: FleetInput): Fleet
     "Remove fleet"
     deleteFleet(id: ID!): Fleet
-
 }
 
 "Information about the ship"
@@ -78,6 +77,8 @@ type Fleet {
     id: ID!
     name: String!
     shipNumbers: [ShipNumber]!
+    # Calculated values:
+    totalShips: Int
 }
 
 type ShipNumber {

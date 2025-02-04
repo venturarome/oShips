@@ -25,6 +25,16 @@ const type: IResolvers = {
         }
     },
 
+    Fleet: {
+        totalShips: parent => {
+            return _.reduce(
+                parent.shipNumbers,
+                function (totalShips, shipNumber) { return totalShips + shipNumber.number; },
+                0
+            );
+        },
+    },
+
     ShipNumber: {
         ship: parent => {
             return _.find(
