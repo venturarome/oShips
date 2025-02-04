@@ -14,23 +14,12 @@ type Query {
     fleets: [Fleet]!
 }
 
+type Mutation {
+    "Add new fleet"
+    addFleet(fleetInput: FleetInput): Fleet
+    "Remove fleet"
+    deleteFleet(id: ID!): Fleet
 
-
-
-type Fleet {
-    id: ID!
-    name: String!
-    shipNumbers: [ShipNumber]!
-}
-
-type ShipNumber {
-    ship: Ship!
-    number: Int
-    # Calculated fields:
-    "The combined weapon_power of all the ships of that kind (number * ship.weapon_power)"
-    weapon_power: Int
-    "The sum of the cargo_capacity of all the ships of that kind (number * ship.cargo_capacity)"
-    cargo_capacity: Int
 }
 
 "Information about the ship"
@@ -83,4 +72,30 @@ type RapidFire {
     ship: Ship!
     shots: Int!
     probability: Float!
+}
+
+type Fleet {
+    id: ID!
+    name: String!
+    shipNumbers: [ShipNumber]!
+}
+
+type ShipNumber {
+    ship: Ship!
+    number: Int
+    # Calculated fields:
+    "The combined weapon_power of all the ships of that kind (number * ship.weapon_power)"
+    weapon_power: Int
+    "The sum of the cargo_capacity of all the ships of that kind (number * ship.cargo_capacity)"
+    cargo_capacity: Int
+}
+
+input FleetInput {
+    name: String!
+    shipNumbers: [ShipNumberInput]
+}
+
+input ShipNumberInput {
+    ship: ID!
+    number: Int!
 }
