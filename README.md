@@ -71,7 +71,6 @@ Here's an example query to fetch information about a specific ship:
 query Ship {
   ship(id: "1") {
     name
-    description
     cost {
       resource {
         name

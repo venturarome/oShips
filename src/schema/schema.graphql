@@ -1,7 +1,4 @@
 type Query {
-    hello: String!
-    helloName(name: String!): String!
-
     "List of all the available ships in the game"
     ships: [Ship]!
     "Info of the ship with the given id"
@@ -30,7 +27,6 @@ type Ship {
     id: ID!
     "Ship name"
     name: String!
-    description: String            # TODO add to the data
     "Cost to build one unit of the ship, detailed by resource type"
     cost: [Cost!]
     type: ShipType

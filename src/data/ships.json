@@ -2,7 +2,6 @@
     {
         "id": 1,
         "name": "Small Cargo",
-        "description": "This spacecraft is the basic unit for resource transport",
         "cost": [
             {
                 "resource": "METAL",

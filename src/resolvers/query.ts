@@ -36,6 +36,9 @@ const query: IResolvers = {
         },
 
         runSimulation(parent: void, {attackerFleetId, defenderFleetId}): any {
+
+            // Battle rules: https://ogame.fandom.com/wiki/Combat
+            
             // Retrieve fleets
             let initialAttackerFleet = database.fleets.filter(f => f.id === attackerFleetId)[0];
             if (initialAttackerFleet == undefined) {
@@ -45,8 +48,6 @@ const query: IResolvers = {
             if (initialDefenderFleet == undefined) {
                 return { summary: `Fleet with id ${defenderFleetId} not found. Simulation aborted.` };
             }
-
-            // Battle rules: https://ogame.fandom.com/wiki/Combat
 
             // Arrays where each item represents a ship.
             let attackingShips: Array<any> = fleet2Ships(initialAttackerFleet);            
@@ -183,7 +184,6 @@ function shoot(shootingShips: Array<any>, targetShips: Array<any>): void {
     });
 }
 
-// TODO try to use generator functions
 function randomTarget(max: number): number {
     return Math.floor(Math.random() * max);
 }
