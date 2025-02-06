@@ -12,6 +12,9 @@ type Query {
 
     "List all registered fleets"
     fleets: [Fleet]!
+
+    "Run a battle simulation between two stored fleets and return the remaining fleets after the battle"
+    runSimulation(attackerFleetId: ID, defenderFleetId: ID): Simulation!
 }
 
 type Mutation {
@@ -89,6 +92,26 @@ type ShipNumber {
     weapon_power: Int
     "The sum of the cargo_capacity of all the ships of that kind (number * ship.cargo_capacity)"
     cargo_capacity: Int
+}
+
+type Simulation {
+    summary: String!
+    attackerFleet: Fleet
+    defenderFleet: Fleet
+    battleResult: BattleResult
+    "Number of rounds needed to have a winner. Max number of rounds is 5."
+    rounds: Int
+    "Attacker ships that survived after the battle"
+    remainingAttackerFleet: Fleet
+    "Defender ships that survived after the battle"
+    remainingDefenderFleet: Fleet
+}
+
+"Enum value to check who won a battle"
+enum BattleResult {
+    ATTACKER_WINS
+    DEFENDER_WINS
+    DRAW
 }
 
 input FleetInput {

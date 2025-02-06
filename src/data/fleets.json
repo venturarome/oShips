@@ -36,5 +36,15 @@
                 "number": 1
             }
         ]
+    },
+    {
+        "id": "4",
+        "name": "Reaper pair",
+        "shipNumbers": [
+            {
+                "ship": "14",
+                "number": 2
+            }
+        ]
     }
 ]
